@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Recommendation</title>
+  <link rel="stylesheet" href="./css/style.css">
+  
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <h2>Travel Recommendation</h2>
+            <ul>
+            <li><a href="./index.html" id="home">Home </a></li>
+            <li><a href="./about.html" id="contact">About Us </a></li>
+            <li><a href="./contact.html" id="contact">Contact Us </a></li>
+            <li><input type="text" id="conditionInput" placeholder="Enter a health condition">  </li>
+            <li><button id='btnSearch'>Search</button>
+            <li><button id='btnReset'>Reset</button>
+        </ul>
+        </nav>
+        <div class="content">
+            <h1 class="title">Contact Us</h1>
+
+            <p class="text">
+                Do you have any questions, suggestions or want to get a personal travel recommendation?
+                Fill out the simple form below and our manager will contact you shortly!
+                <br><br>
+                <b>Feedback form</b><br>
+                Leave your name, email and a short message and we will definitely answer you!
+                <form class="feedback-form">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" placeholder="Your Name" required><br><br>
+  
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" placeholder="Your Email" required><br><br>
+  
+    <label for="feedbackText">Message:</label><br>
+    <textarea id="feedbackText" rows="5" cols="30" placeholder="Enter your Message here" required></textarea><br><br>
+    
+    <button type="Submit" id="submitBtn">Submit Feedback</button>
+                </form>
+            </p>
+        </div>
+    </div>
+  <script src="./script.js"></script>
+</body>
+</html>

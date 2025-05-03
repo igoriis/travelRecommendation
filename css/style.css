@@ -7,6 +7,7 @@
 }
 html {
     height: 100%;
+    background-color: #E0EDF3;
 }
 nav {
     background-color: #000;
@@ -46,10 +47,33 @@ nav {
     height: 100%;
     margin: 0;
     background-position: center;  }
-  h1 {
+  h2 {
     margin: 15px 0;
   }
+  h1 {
+    text-transform: uppercase;
+  }
+  .content {
+    width: 33%;
+    margin: 30px;
+  }
   
+.content .main-title {
+    margin: 90px 50px;
+}
+
+.content .title {
+    margin: 10px 0 50px 0;
+}
+
+.content .text {
+    margin: 10px 0 20px 0;
+}
+
+p {
+    line-height: 25px;
+}
+
   div {
     margin-bottom: 10px;
   }
@@ -59,11 +83,13 @@ nav {
     width: 100px;
   }
   
-  input[type="text"],
-  input[type="number"],
-  select {
-    width: 200px;
+  .feedback-form input[type="text"],
+  .feedback-form input[type="email"],
+  .feedback-form textarea {
+    width: 80%;
     padding: 5px;
+    background: none;
+    border: 1px solid #000;
   }
   
   button {
@@ -78,10 +104,6 @@ nav {
     background-color: #45a049;
   }
   
-  /* Basic CSS for the report section */
-  h2 {
-    margin-top: 30px;
-  }
   
   #report,#result {
     padding: 10px;
@@ -101,3 +123,15 @@ nav {
     height: 100px;
   }
   
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 19px;
+  }
+  .content {
+    width: 100%;
+    margin: 15px;
+  }
+}
+
+
